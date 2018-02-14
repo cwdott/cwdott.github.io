@@ -29,5 +29,12 @@ p {
   padding: 0;
 }
 
-.light { color: $light; }
-.accent { color: $accent; }
+li {
+  display: inline-block;
+  :nth-child(2) {
+    color: $light;
+  }
+  :last-child {
+    color: $accent;
+  }
+}

@@ -30,11 +30,12 @@ p {
 }
 
 li {
-  display: inline-block;
-  :nth-child(2) {
+  display: inline;
+  list-style-type: none;
+  &:nth-child(2n) {
     color: $light;
   }
-  :last-child {
+  &:last-child {
     color: $accent;
   }
 }

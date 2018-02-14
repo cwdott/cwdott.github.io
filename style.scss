@@ -1,13 +1,14 @@
---dark { color: #000; }
---light { color: #aaa; }
---accent { color: #f00; }
+$font-stack: 'Roboto', sans-serif;
+$dark: #000;
+$light: #aaa;
+$accent: #f00;
 
 body {
   max-width: 800px;
   margin: 0 auto;
-  color: var(--dark);
+  color: $dark;
   font-size: 3em;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-stack;
   font-weight: bold;
   padding: 1em;
   text-align: center;
@@ -17,7 +18,7 @@ h1 {
   margin: 0;
   padding: 0;
   font-size: 1em;
-  color: var(--accent);
+  color: $accent;
 }
 
 p {
@@ -25,5 +26,5 @@ p {
   padding: 0;
 }
 
-.light { var(--light); }
-.accent { var(--accent); }
+.light { color: $light; }
+.accent { color: $accent; }

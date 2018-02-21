@@ -1,57 +1,50 @@
-<!--
-cwdott: modified from Matt Haughey's codepen @ https://codepen.io/mathowie/full/zRNEJX/
-
-https://twitter.com/sdkstl/status/961696457945382912
-
-"pdf from the Adult Behavior poster’s designer, Benjamin T. Wilkinson (version making the rounds is missing his initials): https://www.sugarsync.com/pf/D627828_91909309_202089
-
-(also, why he designed it in 2015: https://www.linkedin.com/pulse/john-barlows-25-principles-adult-behaviour-benjamin-t-wilkinson/)
--->
+<!-- Sourced from: https://codepen.io/joshmarinacci/pen/EQXyvM -->
 
 <html>
-<head>
+  <head>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <div id='grid'>
+      <div class="toolbar header start">cool editor</div>
+      <div class="panel middle start scroll">
+        This left side panel hasreallywidetextthattakesupalotofspace
+        and a min width of 150px. 
+        Closing this panel will set display to <i>none</i>;
+      </div>
+      <div class="toolbar footer start">
+        <button class="fa fa-plus-circle"></button>
+        <button class="fa fa-minus-circle"></button>
+      </div>
 
-  <title>25 Principles of Adult Behavior by John Perry Barlow</title>
+      <div class="toolbar header center">
+        <button class="fa fa-save"></button>
+        <span class='spacer'></span>
+        <label>current file</label>
+        <span class='spacer'></span>
+        <button class="fa fa-file"></button>
+      </div>
+      
+      <div class="content middle center">
+        this is the content that we are editing       
+      </div>
+      
+      <div class="toolbar footer center">
+        <button id="toggle-left"> &lt;</button>
+        <span class='spacer'></span>
+        <button id="toggle-right"> &gt;</button>
+      </div>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"> 
+      
+      <div class="toolbar header end">selected item</div>
 
-</head>
-
-<body>
-  <h1>25 Principles of Adult Behavior</h1>
-  <p>
-    <ul>
-      <li>Be patient. No matter what.</li>
-      <li>Don’t badmouth: Assign responsibility, not blame. Say nothing of another you wouldn’t say to <!-- this said "him" but I changed it to "them" -->them.</li>
-      <li>Never assume the motives of others are, to them, less noble than yours are to you.</li>
-      <li>Expand your sense of the possible.</li>
-      <li>Don’t trouble yourself with matters you truly cannot change.</li>
-      <li>Expect no more of anyone than you can deliver yourself.</li>
-      <li>Tolerate ambiguity.</li>
-      <li>Laugh at yourself frequently.</li>
-      <li>Concern yourself with what is right rather than who is right.</li>
-      <li>Never forget that, no matter how certain, you might be wrong.</li>
-      <li>Give up blood sports.</li>
-      <li>Remember that your life belongs to others as well.</li>
-      <li>Don’t risk it frivolously.</li>
-      <li>Never lie to anyone for any reason. (Lies of omission are sometimes exempt.)</li>
-      <li>Learn the needs of those around you and respect them.</li>
-      <li>Avoid the pursuit of happiness.</li>
-      <li>Seek to define your mission and pursue that.</li>
-      <li>Reduce your use of the first personal pronoun.</li>
-      <li>Praise at least as often as you disparage.</li>
-      <li>Admit your errors freely and soon.</li>
-      <li>Become less suspicious of joy.</li>
-      <li>Understand humility.</li>
-      <li>Remember that love forgives everything.</li>
-      <li>Foster dignity.</li>
-      <li>Live memorably.</li>
-      <li>Love yourself.</li>
-      <li>Endure.</li>
-      <li>John Barlow 1977</li>
-    </ul>
-  </p>
-</body>
-
+      <div class="panel middle end scroll">
+        the right side panel
+      </div>
+      
+      <div class="toolbar footer end">more actions</div>
+    </div>
+  </body>
 </html>

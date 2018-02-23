@@ -5,5 +5,9 @@ function toggleClose(elem) {
     elem.classList.toggle("closed");
 }
 
-toggleLeft.addEventListener("click", toggleClose(toggleLeft));
-toggleRight.addEventListener("click", toggleClose(toggleRight));
+document.addEventListener('DOMContentLoaded', function() {
+    toggleLeft.addEventListener("click", toggleClose(toggleLeft));
+    toggleRight.addEventListener("click", toggleClose(toggleRight));
+},false);
+
+

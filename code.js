@@ -1,10 +1,10 @@
-const $ = (selector) => document.querySelector(selector)
-const $$ = (selector) => document.querySelectorAll(selector)
-const on = (elem, type, listener) => elem.addEventListener(type,listener)
+var toggleLeft = document.getElementById("#toggle-left");
+var toggleRight = document.getElementById("#toggle-right");
 
-on($("button[id='toggle-left']"),'click',()=>{
-   $$(".start").forEach((elem) => elem.classList.toggle('closed'))
-})
-on($("button[id='toggle-right']"),'click',()=>{
-   $$(".end").forEach((elem) => elem.classList.toggle('closed'))
-})
+toggleLeft.addEventListener("click", toggleClose(toggleLeft));
+toggleRight.addEventListener("click", toggleClose(toggleRight));
+
+function toggleClose(elem) {
+    var element = document.getElementById(elem);
+    element.classList.toggle("closed");
+}

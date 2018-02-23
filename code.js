@@ -1,5 +1,5 @@
-var toggleLeft = document.getElementById("#toggle-left");
-var toggleRight = document.getElementById("#toggle-right");
+var toggleLeft = document.getElementById("toggle-left");
+var toggleRight = document.getElementById("toggle-right");
 
 toggleLeft.addEventListener("click", toggleClose(toggleLeft));
 toggleRight.addEventListener("click", toggleClose(toggleRight));

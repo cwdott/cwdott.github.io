@@ -5,5 +5,5 @@ function toggleClose(elem) {
     elem.classList.toggle("closed");
 }
 
-toggleLeft.addEventListener('click',function() { toggleClose(toggleLeft); },false);
-toggleRight.addEventListener('click',function() { toggleClose(toggleRight); },false);
+toggleLeft.addEventListener('click',function() { toggleClose(start); },false);
+toggleRight.addEventListener('click',function() { toggleClose(end); },false);

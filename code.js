@@ -8,5 +8,3 @@ on($("button[id='toggle-left']"),'click',()=>{
 on($("button[id='toggle-right']"),'click',()=>{
    $$(".end").forEach((elem) => elem.classList.toggle('closed'))
 })
-
-

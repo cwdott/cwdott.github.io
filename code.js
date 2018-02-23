@@ -1,13 +1,11 @@
-var toggleLeft = document.getElementById("toggle-left");
-var toggleRight = document.getElementById("toggle-right");
+var toggleLeft = document.querySelector('button[id="toggle-left"]');
+var toggleRight = document.querySelector('button[id="toggle-right"]');
 
 function toggleClose(elem) {
     elem.classList.toggle("closed");
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    toggleLeft.addEventListener("click", toggleClose(toggleLeft));
-    toggleRight.addEventListener("click", toggleClose(toggleRight));
+    toggleLeft.addEventListener('click',function() { toggleClose(toggleLeft); },false);
+    toggleRight.addEventListener('click',function() { toggleClose(toggleRight); },false);
 },false);
-
-

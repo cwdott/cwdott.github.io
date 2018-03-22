@@ -10,32 +10,16 @@ body {
   max-width: 800px;
   margin: 0 auto;
   color: $dark;
-  font-size: 3em;
-  font-family: $font-stack;
-  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  font-family: $font-stack;  
   padding: 1em;
-  text-align: center;
+  text-align: justify;
 }
 
 h1 {
   margin: 0;
   padding: 0;
-  font-size: 1em;
+  font-size: 1.5em;
   color: $accent;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  list-style-type: none;
-  &:nth-child(2n) {
-    color: $light;
-  }
-  &:last-child {
-    color: $accent;
-  }
 }

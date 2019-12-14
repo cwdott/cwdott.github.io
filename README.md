@@ -17,5 +17,5 @@ All of these pages should be coded with the following technologies:
 
 
 ```
-cwdott 2018 - the year of learning
+cwdott 2018
 ```
